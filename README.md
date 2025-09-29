@@ -53,5 +53,5 @@ Join our community of developers creating universal apps.
 
 --------------------
 1- npm run reset-project to clear default project setup
-2 - to start npx expo using expo app download from playstore & another way using stimulator like android studio as well as for mac
+2 - to start npx expo start using expo app download from playstore & another way using stimulator like android studio as well as for mac
 3 - 
