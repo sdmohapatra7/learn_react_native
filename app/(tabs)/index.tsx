@@ -1,11 +1,16 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import useTheme from "../hooks/useTheme";
 
 export default function Home() {
+  const {toggleDarkMode} = useTheme()
   return (
     <View style={style.container}>
       <Text style={style.content}>Hello World. Welcome!!</Text>
       <Link href="/about">visit new screen</Link>
+      <TouchableOpacity onPress={toggleDarkMode}>
+        <Text>Toggle Mode</Text>
+      </TouchableOpacity>
     </View>
   );
 }
